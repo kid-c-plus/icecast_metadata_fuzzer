@@ -1,0 +1,28 @@
+deefuzzer:
+    log: broadcast.log
+
+    station:
+
+        infos:  
+            description: "don't touch that dial!"
+            genre: 'eazy listning'
+            name: 'pt'
+            short_name: 'pt'
+            url: 'none'
+
+        media:  
+            bitrate: 128
+            source: '<<MP3 SOURCE DIRECTORY>>'
+            format: 'mp3'
+            ogg_quality: 4
+            samplerate: 44100
+            shuffle: 0
+            voices: '2'
+
+        server:  
+            host: '<<IP>>'
+            mountpoint: '<<MOUNTPOINT>>'
+            port: <<PORT>>
+            public: 0
+            sourcepassword: '<<SOURCE PASSWORD>>'
+            type: 'icecast'

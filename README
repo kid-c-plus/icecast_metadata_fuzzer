@@ -1,0 +1,3 @@
+# Icecast Metadata Fuzzer
+
+Simple input fuzzer for the [Admin Metadata Update endpoint](https://icecast.org/docs/icecast-trunk/admin_interface/#metadata-update) in Icecast. I found when developing a front-end for an Icecast server that certain inputs (namely a single hyphen) caused Icecast to return unparseable JSON from the /status-json.xsl endpoint provided for programmatic access to the current server status information. I wanted to identify all the inputs that cause this, so I wrote a simple web fuzzer. All the invalid inputs I found of length < 4 characters are in the jsonbreakinginputs.txt file.
